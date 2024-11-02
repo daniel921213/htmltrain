@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>台鐵訂票練習</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+<body>
+<form method="post" action="trainbook.php">
+身分證字號
+<input name="uid" class="form-control form-control-lg" type="text" placeholder="身分證字號" aria-label=".form-control-lg example">
+出發站<select name="depart" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>出發站</option>
+  <option value="1">台北</option>
+  <option value="2">台中</option>
+  <option value="3">高雄</option>
+  <option value="4">屏東</option>
+  <option value="5">台東</option>
+</select>
+
+抵達站<select name="arrived" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>抵達站</option>
+  <option value="1">台北</option>
+  <option value="2">台中</option>
+  <option value="3">高雄</option>
+  <option value="4">屏東</option>
+  <option value="5">台東</option>
+</select>
+
+
+日期<input name="ddate" type="date"><br>
+車次<input name="trainNo"class="form-control form-control-lg" type="text" placeholder="車次" aria-label=".form-control-lg example">
+<div class="g-recaptcha" data-sitekey="6Ld5jAQmAAAAAD_3jlBJ3MRjBhfE_IcpBHRQ_JjL"></div>
+<input type="submit" class="btn btn-warning" value="訂票">
+</form>
+</body>
+</html>
+
+

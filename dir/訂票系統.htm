@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<title>訂票</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
+	<body>
+		<form method="post" action="訂票系統.php">
+		身分證字號
+		<input name="uid" class="form-control form-control-sm" type="text" placeholder="生分證字號" aria-label=".form-control-sm example">
+		出發站<select name="depart" class="form-select" aria-label="Default select example">
+		  <option selected></option>
+		  <option value="1">台北</option>
+		  <option value="2">台中</option>
+		  <option value="3">新北</option>
+		  <option value="4">台南</option>
+		  <option value="5">高雄</option>
+		</select>
+		抵達站<select name="arrived" class="form-select" aria-label="Default select example">
+		  <option selected></option>
+		  <option value="1">台北</option>
+		  <option value="2">台中</option>
+		  <option value="3">新北</option>
+		  <option value="4">台南</option>
+		  <option value="5">高雄</option>
+		</select>
+		日期<input name="ddate" type="date">
+		<br>
+		車次<input name="trainNO"class="form-control form-control-sm" type="text" placeholder="車次" aria-label=".form-control-sm example">
+		<div class="g-recaptcha" data-sitekey="6LcHURcmAAAAAE12B-Uiq3w_GiXL1eaOLDOjAirB"></div>
+		<div id="bookingCodeContainer">
+			<p>訂票代碼: <span id="bookingCode"></span></p>
+		</div>
+		<input type="submit" class="btn btn-primary" value="訂票">
+		</form>
+	</body>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+<script>
+    function generateBookingCode() {
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var bookingCode = '';
+      for (var i = 0; i < 6; i++) {
+        bookingCode += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      document.getElementById('bookingCode').textContent = bookingCode;
+    }
+
+    // 網頁載入完成後生成訂票代碼
+    window.addEventListener('DOMContentLoaded', function() {
+      generateBookingCode();
+    });
+  </script>
+</html>	

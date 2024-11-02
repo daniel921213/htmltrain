@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<title>火車站</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<style>
+		#inputAddress{
+			width: 500px;
+		}
+		#inputAddress2{
+			width: 400px;
+		}
+		#inputState{
+			width: 400px;
+		}
+	</style>
+	<body class="single is-preload">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active" data-bs-interval="10000">
+					<img src="https://tip-tr4cdn.cdn.hinet.net/tra-tip-web/tip/img/975c33a1-068a-41e6-a3de-7c8b208675b5/375x150" class="d-block w-100" alt="..." width="50px" height="500px">
+				  </div>
+				  <div class="carousel-item" data-bs-interval="2000">
+					<img src="https://tour.taitung.gov.tw/image/31845/1024x768" class="d-block w-100" alt="..."  width="50px" height="500px">
+				  </div>
+				  <div class="carousel-item">
+					<img src="https://imgs.gvm.com.tw/upload/gallery/20201019/75221_01.jpg" class="d-block w-100" alt="..."  width="50px" height="500px">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+	
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.php">台鐵火車站</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.php">首頁</a></li>
+								<li><a href="訂票系統.html">訂票系統</a></li>
+								<li><a href="https://tip.railway.gov.tw/tra-tip-web/tip/tip005/tip511/shop" target="blank">購物商城</a></li>
+								<li><a href="#">登入會員</a></li>
+								<li><a href="trainquary.php">訂票查詢</a></li>
+								<li><a href="contact.html">聯絡我們</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="https://www.google.com/search" target="blank">
+										<input type="hidden" name="cx" value="93ffbfcef4ef346e1"> <!-- 替换为你的 Google 自定义搜索引擎 ID -->
+										<input type="hidden" name="ie" value="UTF-8">
+										<input type="text" name="q" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="#">
+										<h3>最新消息</h3>
+										<p>Latest news</p>
+									</a>
+								</li>
+								<li>
+									<a href="歷史.html">
+										<h3>火車站歷史</h3>
+										<p>Railway station history</p>
+									</a>
+								</li>
+								<li>
+									<a href="https://tip.railway.gov.tw/tra-tip-web/tip" target="_blank">
+										<h3>關於台鐵</h3>
+										<p>about Taiwan Railway</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>Etiam sed consequat</h3>
+										<p>Porta lectus amet ultricies</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+					<!-- Actions -->
+						<section>
+							<ul class="actions stacked">
+								<li><a href="index2.html" class="button large fit">Log In</a></li>
+							</ul>
+						</section>
+
+				</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>會員登入</h2>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">November 1, 2015</time>
+										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<form action="login.php" method="post">
+                  <h2>登入</h2>
+                  <input type="text" name="username" placeholder="使用者名稱" required><br>
+                  <input type="password" name="password" placeholder="密碼" required><br>
+                  <input type="submit" name="login" value="登入">
+              </form>
+			  <form action="index3.html">
+				<p>還不是會員?</p><input type="submit" value="註冊" />
+			</form>
+
+									<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>	
+									</script>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
